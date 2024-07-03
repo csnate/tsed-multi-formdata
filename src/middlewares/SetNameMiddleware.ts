@@ -5,6 +5,7 @@ import { BodyParams, Locals } from "@tsed/platform-params";
 @Middleware()
 export class SetNameMiddleware implements MiddlewareMethods {
     use(@BodyParams('name') name: string, @Locals() locals: any, @Next() next: Next) {
+        console.log('Name', name);
         locals.name = name;
         next();
     }

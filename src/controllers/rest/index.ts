@@ -3,4 +3,4 @@
  */
 
 export * from "./HelloWorldController";
-export * from './MultiController';
+export * from "./MultiController";
